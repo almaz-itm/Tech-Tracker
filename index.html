@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Tech Tracker</title>
 </head>
@@ -15,28 +15,12 @@
     <h2 class="heading">Ваш прогресс</h2>
     <div class="прогресс">
       <div class="progress-bar">
-        <div class="progress-value"></div>
+        <div class="progress-value" id="progress"></div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="card">
-        <h3>HTML</h3>
-      </div>
-      <div class="card">
-        <h3>CSS</h3>
-      </div>
-      <div class="card">
-        <h3>JavaScript</h3>
-      </div>
-      <div class="card">
-        <h3>Git</h3>
-      </div>
-      <div class="card">
-        <h3>React</h3>
-      </div>
-    </div>
-
+    <div class="row" id="content"></div>
+      
     <form class="form">
       <h2 class="heading">Добавить технологию</h2>
       <div class="form-control">
@@ -50,7 +34,7 @@
       <button type="submit" class="btn">Создать</button>
     </form>
 
-    <div class="modal">
+    <div class="modal" id="modal">
       <h2>JavaScript</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt ipsa corrupti dicta ea maxime repellat voluptate, similique eius impedit! Dolores sunt cumque, rerum molestiae quae optio aliquam aut est.</p>
       <hr>
@@ -60,7 +44,8 @@
       </div>
     </div>
 
-    <div class="modal-backdrop"></div>
+    <div class="modal-backdrop" id="backdrop"></div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
